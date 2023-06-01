@@ -1,0 +1,201 @@
+/*all comments about this part are already in style1.css*/
+body{
+    display: flex;
+    padding: 0px;
+    min-height: 100vh;
+    align-items: center;
+    background: #000000;
+  }
+  #bar li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+  .kit{
+    height:62%;
+    width:250px;
+    position:absolute;
+    background:#161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translate(-250px);
+    margin-top: -18%;
+  
+    
+  }
+  .kit  .nav{
+    color:#ffffff;
+    font-size: 30px;
+    font-weight:bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align:center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg,#222121,#1a1919);
+    margin-top: -10px;
+    
+  }
+  ol{
+    width:100%;
+    list-style:none;
+  }
+  ol li{
+    display: block;
+    width:100%
+  }
+  ol li a{
+    color:#ffffff;
+    padding: 15px 10px;
+  text-decoration:none;
+  display:block;
+  font-size:20px;
+  letter-spacing:1px;
+  position:relative;
+  transition:0.3s;
+  overflow:hidden;
+  text-align: center;
+  text-transform: capitalize;
+  }
+  ol li a i {
+    width:70px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 30px;
+  }
+  ol li:hover a{
+    background:030303;
+    color:00eaff;
+    letter-spacing:5px;
+  }
+  input {
+    visibility: hidden;
+    display: none;
+  }
+  span{ 
+    position: absolute;
+    right: -40px;
+    top:30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color:#fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background-color: #b8b4b4;
+  }
+  #arrow{
+    background: rgb(242, 239, 239);
+  }
+  #check:checked~ .kit{
+    transform: translateX(0);
+  }
+  #check:checked~ .kit #bars{
+    height:4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
+  }
+  #check:checked ~ section{
+    transform: scale(1.2);
+    filter:brightness(20%);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  /*controls the whole set of images*/
+  .com{
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+    margin-left: 40px;
+  }
+  /*controls images individually*/
+.com i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+  /*transform translate is applied here wherei n the images will go in the direction where the user clicks*/
+  .com i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  /*controls the style of the icon right and left*/
+  .com i:hover{
+    background: #f2f2f2;
+  }
+  /*controls  the left arrow icon*/
+  .com i:first-child{
+    left: -22px;
+    display: none;
+  }
+  /*controls  the right arrow icon*/
+  .com i:last-child{
+    right: -22px;
+  }
+  .com .man{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  /*controls the behaviour when images are dragged ledt and right*/
+  .man.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .man.dragging img{
+    pointer-events: none;
+  }
+  .man img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+  }
+  .man img:first-child{
+    margin-left: 0px;
+  }
+
+  /*controls the padding of the arrow icons*/
+  @media screen and (max-width: 900px) {
+    .man img{
+    width: calc(100% / 2);
+    }
+  }
+  /*controls the size and whole icon*/
+  @media screen and (max-width: 550px) {
+    .man img{
+      width: 100%;
+    }
+  }
+ 
+  h1{
+    font-size: 100px;
+    margin-left: 10px;
+    padding: 0%;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    font-family: 'Castoro Titling', cursive;
+    font-weight: 100005;
+    margin-top: -100px;
+  }

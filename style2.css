@@ -1,0 +1,166 @@
+/*all comments about this part are already in style1.css*/
+body{
+    background: black;
+  }
+  #bar li{
+      list-style: none;
+      display: inline-block;
+      margin: 20px;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+  }
+  .kit{
+      height:62%;
+      width:250px;
+      position:absolute;
+      background:#161616;
+      z-index: 1;
+      transition: 0.5s ease;
+      transform: translate(-250px);
+  }
+  .kit  .nav{
+      color:#ffffff;
+      font-size: 30px;
+      font-weight:bold;
+      padding: 30px;
+      text-transform: uppercase;
+      text-align:center;
+      letter-spacing: 3px;
+      background: linear-gradient(30deg,#222121,#1a1919)
+  }
+  ol{
+      width:100%;
+      list-style:none;
+  }
+  ol li{
+      display: block;
+      width:100%
+  }
+  ol li a{
+      color:#ffffff;
+      padding: 15px 10px;
+  text-decoration:none;
+  display:block;
+  font-size:20px;
+  letter-spacing:1px;
+  position:relative;
+  transition:0.3s;
+  overflow:hidden;
+  text-align: center;
+  text-transform: capitalize;
+  }
+  ol li a i {
+      width:70px;
+      font-size: 25px;
+      text-align: center;
+      padding-left: 30px;
+  }
+  ol li:hover a{
+      background:030303;
+      color:00eaff;
+      letter-spacing:5px;
+  }
+  input {
+  
+      visibility: hidden;
+      display: none;
+  }
+  span{ 
+      position: absolute;
+      right: -40px;
+      top:30px;
+      font-size: 25px;
+      border-radius: 3px;
+      color:#fff;
+      padding: 3px 8px;
+      cursor: pointer;
+      background-color: #000;
+  }
+  #arrow{
+      background: rgb(120, 117, 117);
+  }
+  #check:checked~ .kit{
+      transform: translateX(0);
+  }
+  #check:checked~ .kit #bars{
+      height:4px;
+      background-color: white;
+      margin: 5px 0;
+      border-radius: 25px;
+  }
+  section{
+      min-height: 100vh;
+      background: url(img.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: 0.5s;
+      filter: brightness(100%);
+  }
+  #check:checked ~ section{
+      transform: scale(1.2);
+      filter:brightness(20%);
+  }
+  h4{
+      top: 90%;
+      text-align: center;
+      margin-left:1px;
+      margin-right: 10px;
+      margin-top: 100px;
+  }
+  .video{
+      margin-top:-500px ;
+      margin-left: 120px;
+      margin-right: 80px;
+      margin-bottom:30px;
+  }
+  /*alignment and sizes of images in each line section*/
+  .row::after {
+     content: "";
+     clear: both;
+     display: table;
+  }
+  /*alignment and sizes of left images in each line section*/
+  .cow {
+       float: left;
+       width: 33.33%;
+       padding: 5px;
+  }
+  /*overall alignment*/
+  .ror{
+     content: "";
+     clear: both;
+     display:flow-root;
+  }
+  /*controls the pics alignment and effects*/
+  /*fade effect is applied*/
+  .hru{
+     margin-left: 315px;
+     margin-right: 190px;
+     margin-bottom: -10px;
+     margin-top: -0.5%;
+     animation: fadeIn 7s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  * {
+     box-sizing: border-box;
+  }
+  /*fade effect is applied on specific images*/
+  .grp {
+     float: left;
+     width: 33.33%;
+     padding: 5px;
+     animation: fadeIn 8s;
+  }
+   /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }     

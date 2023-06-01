@@ -1,0 +1,233 @@
+/*all comments about this part are already in style1.css*/
+body {
+    background: black; 
+  }
+    #bar li{
+      list-style: none;
+      display: inline-block;
+      margin: 20px;  
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+  .kit{
+    height:62%;
+    width:250px;
+    position:absolute;
+    background:#161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translate(-250px);
+    margin-top: -1%;
+  }
+  .kit .nav{
+    color:#ffffff;
+    font-size: 30px;
+    font-weight:bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align:center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg,#222121,#1a1919);
+    margin-top: -10px;
+  }
+  ol{
+    width:100%;
+    list-style:none;
+  }
+  ol li{
+    display: block;
+    width:100%
+  }
+  ol li a{
+    color:#ffffff;
+    padding: 15px 10px;
+    text-decoration:none;
+    display:block;
+    font-size:20px;
+    letter-spacing:1px;
+    position:relative;
+    transition:0.3s;
+    overflow:hidden;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  ol li a i {
+    width:70px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 30px;
+  }
+  ol li:hover a{
+    background:030303;
+    color:00eaff;
+    letter-spacing:5px;
+  }
+  input {
+    visibility: hidden;
+    display: none;
+  }
+    span{ 
+    position: absolute;
+    right: -40px;
+    top:30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color:#fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background-color: #b8b4b4;
+  }
+    #arrow{
+    background: white
+  }
+  #check:checked~ .kit{
+    transform: translateX(0);
+  }
+  #check:checked~ .kit #bars{
+    height:4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
+  }
+  section{
+    min-height: 100vh;
+    background: url(img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    filter: brightness(100%);
+  }
+  #check:checked ~ section{
+    transform: scale(1.2);
+    filter:brightness(20%);
+    }
+  h1{
+    top: 30%;
+    margin-left: 39%;
+    font-size: 70px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-family: 'Castoro Titling', cursive;
+    font-weight: 100005;
+    margin-right:10px ;
+  }
+  .video{
+    margin-top:-500px ;
+    margin-left: 90px;
+    margin-right: 80px;
+    margin-bottom:-399px;
+  }
+  .nah{
+    text-align: center;
+  }   
+  /*aligns,style the text and make sure that it will show the text when hovered*/
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  /*aligns and controls the size of some specific images*/
+  .straw {
+    position: relative;
+    float: left;
+    width: 50%;
+    width: 33.33%;
+    padding:5px;
+    margin-bottom: 20px;
+  }
+  /*controls the overall style of the overlay like effects,timing,size,color,alignment,and position*/
+  .overlay {
+    position: absolute;
+    top: 1.3%;
+    bottom: 0;
+    left: 4.5%;
+    right: 0%;
+    width:385px;
+    height:450px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgb(200, 193, 193);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  /*controls for the the image whenever it's hovered*/
+  .straw:hover .overlay {
+    opacity: 1;
+  } 
+  
+  /*controls the alignment and size of the video*/              
+  .last{
+    width:915px;
+    margin-bottom: 40px;
+  }
+  /*filter for The images/
+  /*hover effect/
+  /*image will drop shadow everytime its hovered*/
+   img.c:hover {
+     filter:drop-shadow( 15px 15px 15px rgb(70, 35, 139));                    
+  }
+   
+  img.c:hover {
+    filter:drop-shadow( 15px 15px 15px rgb(70, 35, 139));
+   }                       
+  
+  img.a{
+    margin-bottom: 40px;
+  }
+  img.a:hover {
+    filter:drop-shadow( 15px 15px 15px rgb(213, 6, 6));                          
+  }
+  img.b{
+    margin-bottom: 40px;
+  }
+  img.b:hover {
+    filter:drop-shadow( 15px 15px 15px rgb(213, 6, 6));                                             
+  }
+  img.c{
+    margin-bottom: 40px;
+  }
+  img.c:hover {
+    filter:drop-shadow( 15px 15px 15px rgb(213, 6, 6));                                              
+  }
+  img.d{
+    margin-bottom: 40px;
+  }
+  img.d:hover {
+    filter:drop-shadow( 15px 15px 15px rgb(213, 6, 6));
+  }
+  img.e{
+    margin-bottom: 40px;
+  }
+  img.e:hover {
+    filter:drop-shadow( 15px 15px 15px rgb(213, 6, 6));
+                                                        
+  }
+  img.f{
+    margin-bottom: 40px;
+  }
+  img.f:hover {
+    filter:drop-shadow( 15px 15px 15px rgb(213, 6, 6));
+  }
+  img.g{
+    margin-bottom: 40px;
+  }
+  img.g:hover {
+    filter:drop-shadow( 15px 15px 15px rgb(213, 6, 6));
+  }
+  img.h{
+    margin-bottom: 40px;
+  }
+  img.h:hover {
+    filter:drop-shadow( 15px 15px 15px rgb(213, 6, 6));
+  }   

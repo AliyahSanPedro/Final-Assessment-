@@ -1,0 +1,118 @@
+body{
+    display: flex;
+    padding: 0px;
+    min-height: 100vh;
+    align-items: center;
+    background: black;
+  }
+  /*controls the alignment of the whole nav menu*/
+  #bar li{
+      list-style: none;
+      display: inline-block;
+      margin: 20px;   
+  }
+  /*controls the spaces and margin of the nav menu*/
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  /*the body of the whole nav menu*/
+  .kit{
+      height:62%;
+      width:250px;
+      position:absolute;
+      background:#161616;
+      z-index: 1;
+      transition: 0.5s ease;
+      transform: translate(-250px);
+      margin-top: -18%;
+  }
+  /*nav texts/bar*/
+  .kit  .nav{
+      color:#ffffff;
+      font-size: 30px;
+      font-weight:bold;
+      padding: 30px;
+      text-transform: uppercase;
+      text-align:center;
+      letter-spacing: 3px;
+      background: linear-gradient(30deg,#222121,#1a1919)
+  }
+  ol{
+      width:100%;
+      list-style:none;
+  }
+  ol li{
+      display: block;
+      width:100%
+  }
+  ol li a{
+      color:#ffffff;
+      padding: 15px 10px;
+      text-decoration:none;
+      display:block;
+      font-size:20px;
+      letter-spacing:1px;
+      position:relative;
+      transition:0.3s;
+      overflow:hidden;
+      text-align: center;
+      text-transform: capitalize;
+  }
+  ol li a i {
+      width:70px;
+      font-size: 25px;
+      text-align: center;
+      padding-left: 30px;
+  }
+  /*hover effect the spaces between the texts will widen when the texts are hovered*/
+  ol li:hover a{
+      background:030303;
+      color:00eaff;
+      letter-spacing:5px;
+  }
+  /*the icon which needs to be pressed for the user to be able to close and open the nav*/
+  input {
+      visibility: hidden;
+      display: none;
+  }
+  /*styles the nav icon*/
+  span{ 
+      position: absolute;
+      right: -40px;
+      top:30px;
+      font-size: 25px;
+      border-radius: 3px;
+      color:#fff;
+      padding: 3px 8px;
+      cursor: pointer;
+      background-color:#b8b4b4;
+  }
+  
+  /*moves the menu bar open and closed when the icon is pressed*/
+  #check:checked~ .kit{
+      transform: translateX(0);
+  }
+  h1{
+      top: 30%;
+      margin-left: 35%;
+      font-size: 50px;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-family: 'Castoro Titling', cursive;
+      font-weight: 100005;
+      margin-right:10px ;
+  }
+  /*filter for Nikelogo*/
+  /*hover effect*/
+  /*image will drop shadow everytime its hovered*/
+  img.Nikelogo {
+    margin-top: 30px;
+    margin-left: 400px;
+    animation: fadeIn 5s;
+  }
+  img.Nikelogo:hover {
+    filter:drop-shadow( 5px 5px 5px rgb(246, 5, 5));
+  }        
